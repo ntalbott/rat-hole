@@ -18,6 +18,10 @@ class RatHole
   def process_server_response(rack_response, rack_request)
     rack_response
   end
+  
+  def prepare_post(request, post)
+    post.form_data = request.POST
+  end
 
   def call(env)
     Net::HTTP.start(@host) do |http|
@@ -37,7 +41,7 @@ class RatHole
         response = http.get(request_uri, source_headers)
       elsif source_request.post?
         post = Net::HTTP::Post.new(request_uri, source_headers)
-        post.form_data = source_request.POST
+        prepare_post(source_request, post)
         response = http.request(post)
       end
 

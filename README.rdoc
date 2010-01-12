@@ -61,7 +61,7 @@ You can also modify the response from the server to cleanup html tweak headers e
   end
 
 == INSTALL:
-  * sudo gem install mikehale-rat-hole
+  * sudo gem install rat-hole
 
 == How it Works
   User Request  --->
@@ -71,6 +71,7 @@ You can also modify the response from the server to cleanup html tweak headers e
   User Response  <---
 
 == TODO
+* Currently tests fail (and probably production things fail) with Rack > 1.0
 * handle server down
 * handle gziped content (accept-encoding, transfer-encoding)
 * maybe use a pool of Net::HTTP connections to speed things up
@@ -82,11 +83,12 @@ You can also modify the response from the server to cleanup html tweak headers e
 == Credits
 * Michael Hale (http://halethegeek.com)
 * David Bogus
+* Nathaniel Talbott
 
 == LICENSE
 The MIT License
 
-Copyright (c) 2008-2009 Michael Hale & David Bogus
+Copyright (c) 2008-2010 Michael Hale & David Bogus & Nathaniel Talbott
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

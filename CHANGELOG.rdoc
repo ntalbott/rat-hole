@@ -1,3 +1,7 @@
+= 1.1.10
+
+* Allow different preparation of POST.
+
 = 0.1.9
 
 * test tidy
