@@ -9,7 +9,7 @@ begin
     s.homepage = "http://github.com/mikehale/rat-hole"
     s.description = "Rat Hole is a handy library for creating a rack compliant http proxy that allows you to modify the request from the user and the response from the server."
     s.authors = ["Michael Hale", "David Bogus", "Nathaniel Talbott"]
-    s.add_dependency('rack', '< 1.0')
+    s.add_dependency('rack', '>= 0.9.1')
     s.has_rdoc = false
     # s.extra_dev_deps << ['rr', '>= 0.6.0']
     # s.extra_dev_deps << ['hpricot', '>= 0.6.164']

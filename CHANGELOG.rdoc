@@ -1,3 +1,7 @@
+= 1.1.11
+
+* Allow using untested Rack versions.
+
 = 1.1.10
 
 * Allow different preparation of POST.
